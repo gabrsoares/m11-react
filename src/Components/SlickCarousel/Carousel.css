@@ -1,0 +1,19 @@
+.slick-prev::before, .slick-next::before {
+    color: #3c3c3c;
+}
+
+h3 {
+    height: 200px;
+    max-width: 300px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        margin: 0 auto
+    }
+}
