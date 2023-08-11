@@ -1,10 +1,12 @@
 import './App.css';
-import SimpleSlider from './Pages/Home';
+import Cadastro from './Pages/Cadastro/Cadastro';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <SimpleSlider />
+      {/* <Home /> */}
+      <Cadastro />
     </div>
   );
 }
