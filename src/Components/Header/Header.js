@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 const theme = createTheme ({
@@ -19,13 +20,13 @@ export default function Header(props) {
         </div>
         <div className="nav">
           <ThemeProvider theme={theme}>
-            <Button color="primary" variant="contained">Home</Button>
+            <Button color="primary" component={Link} to="/" variant="contained">Home</Button>
           </ThemeProvider>
           <ThemeProvider theme={theme}>
-            <Button color="primary" variant="contained">Cadastro</Button>
+            <Button color="primary" component={Link} to="/cadastro" variant="contained">Cadastro</Button>
           </ThemeProvider>
           <ThemeProvider theme={theme}>
-            <Button color="primary" variant="contained">Registro</Button>
+            <Button color="primary" component={Link} to="/registro" variant="contained">Registro</Button>
           </ThemeProvider>
         </div>
     </div>

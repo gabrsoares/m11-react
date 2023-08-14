@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import Cadastro from './Pages/Cadastro/Cadastro';
-import Home from './Pages/Home/Home';
-import Registro from './Pages/Registro/Registro';
+
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './AppRoutes';
 
 function App() {
 
@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Home /> */}
-      <Cadastro setNewData={setNewData} newData={newData}/>
-      <Registro newData={newData} />
+      <BrowserRouter>
+        <AppRoutes newData={newData} setNewData={setNewData}/>
+      </BrowserRouter>
     </div>
   );
 }
