@@ -2,6 +2,15 @@
     color: #3c3c3c;
 }
 
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-menu h2 {
+    text-align: center;
+}
+
 h3 {
     height: 200px;
     max-width: 300px;

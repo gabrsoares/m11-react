@@ -8,7 +8,7 @@ export default function Data({newData}) {
             <div className="data-list" key={index}>
                 <div className='container'>
                     <p>Nome:</p>
-                    <p>{item.name}</p>
+                    <p className='name-data'>{item.name}</p>
                 </div>
                 <div className='container'>
                     <p>CPF:</p>

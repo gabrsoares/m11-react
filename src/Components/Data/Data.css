@@ -14,14 +14,26 @@
 }
 
 #data .container p {
-    margin-right: .5rem;
-    word-break: break-all;
+    overflow-wrap: break-word;
+    margin-left: 5px;
+    max-width: 450px;
+}
+
+.data-list {
+    border: 2px solid #000;
+    border-radius: 10px;
 }
 
 .error {
     text-align: center;
     margin: 0;
     color: red;
+}
+
+@media (max-width: 600px) {
+    #data .container p {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 601px) {

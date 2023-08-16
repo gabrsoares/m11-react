@@ -57,7 +57,7 @@ const Form = ({setNewData, newData}) => {
     }
 
     return (
-        <div>
+        <div className='formulario'>
             <form id='form' onSubmit={handleSubmit}>
                 <div className="form">
                     <div className="loginInfo">
